@@ -1,5 +1,5 @@
 
-bash-3.2$ date
+**bash-3.2$ date**
 ```
 Wed 10 Jul 2024 18:54:58 BST
 ```
