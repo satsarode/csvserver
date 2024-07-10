@@ -1,9 +1,13 @@
 
 bash-3.2$ date
-```Wed 10 Jul 2024 18:54:58 BST```
+```
+Wed 10 Jul 2024 18:54:58 BST
+```
 bash-3.2$ docker login
-```Authenticating with existing credentials...
-Login Succeeded```
+```
+Authenticating with existing credentials...
+Login Succeeded
+```
 bash-3.2$ docker pull prom/prometheus:v2.45.2
 v2.45.2: Pulling from prom/prometheus
 Digest: sha256:8cf63a779c484564428c8ab5aa61899f41b72e92232d930b2b001661d978bed8
