@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoserver-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demoserver
+  template:
+    metadata:
+      labels:
+        app: demoserver
+    spec:
+      containers:
+        - name: demoserver
+          image: satsarode/demoserver:1.0
+          ports:
+            - containerPort: 9393
+          env:
+            - name: CSVSERVER_BORDER
+              value: Orange
+      initContainers:
+        - name: init-csv
+          image: busybox
+          command: ['sh', '-c', 'echo "0, 234\n1, 98\n2, 34" > /csvserver/inputdata']
+          volumeMounts:
+            - name: data-volume
+              mountPath: /csvserver
+      volumes:
+        - name: data-volume
+          emptyDir: {}
