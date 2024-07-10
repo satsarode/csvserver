@@ -157,6 +157,11 @@ CONTAINER ID   IMAGE                      COMMAND                  CREATED      
 demoserver1
 ```
 
+**bash-3.2$ docker rm demoserver1**
+```
+demoserver1
+```
+
 **bash-3.2$ docker ps**
 ```
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
