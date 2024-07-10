@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoserver-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demoserver
+  template:
+    metadata:
+      labels:
+        app: demoserver
+    spec:
+      containers:
+        - name: demoserver
+          image: satsarode/demoserver:1.0
+          ports:
+            - containerPort: 9393
+          env:
+            - name: CSVSERVER_BORDER
+              value: Orange
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demoserver-service
+spec:
+  selector:
+    app: demoserver
+  ports:
+    - protocol: TCP
+      port: 9393
+      targetPort: 9393
+  type: NodePort
