@@ -167,13 +167,7 @@ demoserver1
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
-**bash-3.2$ docker run -d --name demoserver1 -p 9300:9393 -e CSVSERVER_BORDER=Orange -v /Users/sarode/Documents/csvserver/solution:/csvserver satsarode/demoserver:1.0** 
-```
-docker: Error response from daemon: Conflict. The container name "/demoserver1" is already in use by container "8b5cb941a550385ea05b1dbab69d45e399bd9c55953be56173b60494bc844eb9". You have to remove (or rename) that container to be able to reuse that name.
-See 'docker run --help'.
-```
-
-**bash-3.2$ docker run -d --name demoserver1 -p 9300:9393 -e CSVSERVER_BORDER=Orange -v /Users/sarode/Documents/csvserver/solution:/csvserver satsarode/demoserver:1.0** 
+**bash-3.2$ docker run -d --name demoserver1 -e CSVSERVER_BORDER=Orange -v /Users/sarode/Documents/csvserver/solution:/csvserver satsarode/demoserver:1.0** 
 ```
 e14ae66f4e2bb4ce1a69cf444ead6d02a3e810b07e6308b762983006d7bef5a7
 ```
