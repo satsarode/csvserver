@@ -1,1 +1,1 @@
-docker run -d --name demoserver1 -e CSVSERVER_BORDER=Orange -v /Users/sarode/Documents/csvserver/solution:/csvserver satsarode/demoserver:1.0 
+docker run -d --name demoserver1 -e CSVSERVER_BORDER=Orange -p 9300:9393 -v /Users/sarode/Documents/csvserver/solution:/csvserver satsarode/demoserver:1.0 
