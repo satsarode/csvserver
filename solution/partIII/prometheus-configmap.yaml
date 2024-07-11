@@ -11,4 +11,4 @@ data:
     scrape_configs:
       - job_name: 'csvserver'
         static_configs:
-          - targets: ['demoserver-service:9393']
+          - targets: ['demoserver-service:9300']

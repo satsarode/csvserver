@@ -7,6 +7,6 @@ spec:
     app: demoserver
   ports:
     - protocol: TCP
-      port: 9393
-      targetPort: 9393
+      port: 9300
+      targetPort: 9300
   type: NodePort

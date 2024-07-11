@@ -16,7 +16,7 @@ spec:
         - name: demoserver
           image: satsarode/demoserver:1.0
           ports:
-            - containerPort: 9393
+            - containerPort: 9300
           env:
             - name: CSVSERVER_BORDER
               value: Orange
@@ -30,6 +30,6 @@ spec:
     app: demoserver
   ports:
     - protocol: TCP
-      port: 9393
-      targetPort: 9393
+      port: 9300
+      targetPort: 9300
   type: NodePort
