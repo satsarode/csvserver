@@ -41,7 +41,7 @@ total 16608
 -rwxr-xr-x@ 1 sarode  staff  8499200 10 Jul 14:07 demoserver
 ```
 
-**bash-3.2$ cat Dockerfile **
+**bash-3.2$ cat Dockerfile**
 ```
 FROM almalinux:9.3-20231124
 WORKDIR /demoserver
@@ -118,10 +118,14 @@ prom/prometheus        v2.45.2   8cf63a779c48   6 months ago   325MB
 ```
 
 **bash-3.2$ cd ..**
+```angular2html
 
+```
 
 **bash-3.2$ touch csvserver/inputdata**
+```angular2html
 
+```
 
 **bash-3.2$ ls -l**
 ```
