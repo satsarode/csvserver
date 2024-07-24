@@ -17,7 +17,8 @@ You don't need to know Docker or Prometheus beforehand to solve this assignment,
   - Clone this repository to your machine. (**Don't fork it**).
   - Use `bash` shell for all the operations, other shells like ksh, fish etc might cause unknown issues.
   - Create a new **private** repository on GitHub.
-  - `cd` into the `solution` directory, and perform all the steps from that directory.
+  - `cd` into the `solution` directory
+  - Perform all the steps from that directory.
 
 > **NOTE**: If you have a Windows machine, you can try to do this assignment on [WSL-2](https://docs.docker.com/docker-for-windows/wsl/) or use https://labs.play-with-docker.com or install GNU/Linux (i.e. Ubuntu) in a virtual machine.
 
